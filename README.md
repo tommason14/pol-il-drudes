@@ -7,3 +7,5 @@ with helper scripts found [here](https://github.com/tommason14/scripts/tree/mast
 
 The xyz and ff files are to be used with [fftool](https://github.com/agiliopadua/fftool), and the dff files 
 should be used with the `polarizer` script in the `fftool` repository.
+
+All ff files with the exception of il.ff include geodesic charges.
