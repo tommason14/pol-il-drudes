@@ -1,0 +1,8 @@
+# fmo
+e ch:dhp 0.645
+s * * 0.985     
+###############
+# SAPT
+# e ch:dhp 0.3779
+# e ch:water 0.3692
+# e dhp:water 0.3692
