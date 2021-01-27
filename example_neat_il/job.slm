@@ -17,18 +17,16 @@ pairs='pair-drude.lmp'
 atoms="$(lammps_print_atom_types.sh $data)"
 cores="$(lammps_print_core_types.sh $data)"
 drudes="$(lammps_print_drude_types.sh $data)"
-waters="$(lammps_print_molecule_types.sh $data water)"
 drudefix="$(lammps_print_drude_fix.py $data)"
-shakefix="$(lammps_print_shake_fix.py -d $data -x HOw)" # water is fixed via fix rigid, not SHAKE
+shakefix="$(lammps_print_shake_fix.py -d $data)"
 elements="$(lammps_print_elements.py $data)"
 
-mpirun -np $SLURM_NTASKS $lammps -in in.il.water \
+mpirun -np $SLURM_NTASKS $lammps -in pol.in \
   -v data "$data" \
   -v pairs "$pairs" \
   -v atoms "$atoms" \
   -v cores "$cores" \
   -v drudes "$drudes" \
-  -v waters "$waters" \
   -v drudefix "$drudefix" \
   -v shakefix "$shakefix" \
   -v elements "$elements" >& lammps.out
