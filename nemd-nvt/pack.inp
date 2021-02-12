@@ -1,0 +1,19 @@
+# created by fftool
+tolerance 2.5
+filetype xyz
+output simbox.xyz
+
+structure ch_pack.xyz
+  number 20
+  inside box 1.5000 1.5000 1.5000 23.5000 23.5000 23.5000
+end structure
+
+structure ac_pack.xyz
+  number 20
+  inside box 1.5000 1.5000 1.5000 23.5000 23.5000 23.5000
+end structure
+
+structure swm4-ndp_pack.xyz
+  number 100
+  inside box 1.5000 1.5000 1.5000 23.5000 23.5000 23.5000
+end structure

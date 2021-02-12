@@ -1,0 +1,58 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Aug  6 2020 18:09:57
+! Source code version: May 4 2020 (may the force (-: ) HF2
+! Input file written at Fri Feb 12 12:33:32 2021.
+! I have acknowledged this note (y/n). [yes] 
+
+! Do you want to assign atom data to them (y/n)? [yes] 
+n
+! Do you want to hide atom type "M" (y/n)? [yes] 
+y
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+
+! Use these values (y) or enter different values (n)? [yes] 
+
+! Update cell geometry in every time step (i.e., NPT ensemble) (y) or use fixed cell (n)? [yes] 
+
+! Create images of the structural formulas (y/n)? [no] 
+
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Which functions to compute (comma separated)?
+msd
+! Use the advanced mode for the main part (y/n)? [no] 
+
+! Enter the physical time distance between successive trajectory frames in fs: [0.5] 
+100
+! Which molecule should be observed (C5H14NO=1, H2O4P=2, H2O=3)? 
+1
+! Which atom(s) to take from OM C5H14NO (e.g. "C1,C3-5,H", "*"=all)? [#2]
+*
+! Enter the correlation depth for this MSD (in trajectory frames): [42] 
+
+! Add another observation (y/n)? [no] 
+y
+! Which molecule should be observed (C5H14NO=1, H2O4P=2, H2O=3)? 
+2
+! Which atom(s) to take from OM H2O4P (e.g. "C1,C3-5,H", "*"=all)? [#2]
+*
+! Enter the correlation depth for this MSD (in trajectory frames): [42] 
+
+! Add another observation (y/n)? [no] 
+y
+! Which molecule should be observed (C5H14NO=1, H2O4P=2, H2O=3)? 
+3
+! Which atom(s) to take from OM H2O (e.g. "C1,C3-5,H", "*"=all)? [#2]
+*
+! Enter the correlation depth for this MSD (in trajectory frames): [42] 
+
+! Add another observation (y/n)? [no] 
+
+! Remove center of mass movement of the box (y/n)? [yes] 
+
+! In which trajectory frame to start processing the trajectory? [1] 
+
+! How many trajectory frames to read (from this position on)? [all] 
+
+! Use every n-th read trajectory frame for the analysis: [1] 
+

@@ -1,0 +1,105 @@
+LAMMPS (29 Oct 2020)
+Reading data file ...
+  orthogonal box = (0.0000000 0.0000000 0.0000000) to (25.000000 25.000000 25.000000)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  1300 atoms
+  scanning bonds ...
+  5 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  18 = max dihedrals/atom
+  reading bonds ...
+  1160 bonds
+  reading angles ...
+  1000 angles
+  reading dihedrals ...
+  1080 dihedrals
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0.0      0.0      0.5     
+  special bond factors coul:  0.0      0.0      0.5     
+     5 = max # of 1-2 neighbors
+    16 = max # of 1-3 neighbors
+    22 = max # of 1-4 neighbors
+    30 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.008 seconds
+960 atoms in group ATOMS
+340 atoms in group CORES
+340 atoms in group DRUDES
+400 atoms in group WATER
+Finding SHAKE clusters ...
+      60 = # of size 2 clusters
+      40 = # of size 3 clusters
+      60 = # of size 4 clusters
+       0 = # of frozen angles
+  find clusters CPU = 0.000 seconds
+  create bodies CPU = 0.000 seconds
+  100 rigid bodies with 400 atoms
+  0.83210114 = max distance from body owner to body atom
+WARNING: Temperature for fix modify is not for group all (../fix_rigid_nh_small.cpp:1336)
+PPPM initialization ...
+WARNING: System is not charge neutral, net charge = -0.002 (../kspace.cpp:313)
+  using 12-bit tables for long-range coulomb (../kspace.cpp:328)
+  G vector (1/distance) = 0.27312407
+  grid = 25 25 25
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.003572617
+  estimated relative force accuracy = 1.075883e-05
+  using double precision FFTW3
+  3d grid and FFT values/proc = 32768 15625
+Rebuild special list taking Drude particles into account
+Old max number of 1-2 to 1-4 neighbors: 27
+New max number of 1-2 to 1-4 neighbors: 27 (+0)
+WARNING: One or more atoms are time integrated more than once (../modify.cpp:285)
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 14
+  ghost atom cutoff = 14
+  binsize = 7, bins = 4 4 4
+  5 neighbor lists, perpetual/occasional/extra = 5 0 0
+  (1) pair lj/cut/coul/long, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (2) pair coul/long/cs, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (3) pair thole, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (4) pair coul/tt, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (5) neighbor class addition, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d/newton
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1.0
+TGNHC thermostat for Drude model
+  DOFs of molecules, atoms and dipoles: 417.0 1540.0 1020.0
+Per MPI rank memory allocation (min/avg/max) = 36.36 | 36.36 | 36.36 Mbytes
+Step CPU TotEng f_nvt[1] f_nvt[2] f_nvt[3] Press PotEng E_vdwl Density 
+       0            0    211.99729    263.38456    319.61577    10.133236   -7.7824948   -396.46111   -11.798048    0.6190149 
+ERROR on proc 0: Rigid body atoms 609 612 missing on proc 0 at step 1 (../fix_rigid_small.cpp:3328)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Aug  6 2020 18:09:57
+! Source code version: May 4 2020 (may the force (-: ) HF2
+! Input file written at Fri Feb 12 12:33:24 2021.
+! I have acknowledged this note (y/n). [yes] 
+
+! Do you want to assign atom data to them (y/n)? [yes] 
+
+! Automatically rename all atoms to corresponding elements (recommended) (y/n)? [yes] 
