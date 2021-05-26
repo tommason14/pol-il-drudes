@@ -27,6 +27,7 @@ fix DRUDE all drude N C C C N C N C C C C C N C N D D D D D D D D D D
 fix SHAKE ATOMS shake 0.0001 20 0 b 1 5 10 11
 
 variable        T equal 298
+# if using a restart file, delete the next two lines
 velocity        ATOMS create ${T} ${T} dist gaussian
 velocity        DRUDES create 1 1 dist gaussian
 
